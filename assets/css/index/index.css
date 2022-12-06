@@ -1,0 +1,184 @@
+#main-index{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    height: 100vh;
+}
+
+.right{
+    display: block;
+    height: 100%;
+    background: linear-gradient(to top, black, #8f028f);
+}
+
+.left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title{
+    display: relative;
+    font-size: 5rem;
+    color: #8f028f;
+    margin-bottom:32px;
+}
+.title::after{
+    content:"";
+    display: block;
+    width:80px;
+    height: 10px;
+    background-color: #8f028f;
+}
+
+#container-form-frequency{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:32px;
+    width: 100%;
+}
+#form-frequency{
+    width: 100%;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+.label{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-control{
+    text-transform: uppercase;
+    font-size: 24px;
+    padding:14px;
+    border:none;
+    background-color: #E7D8E9;
+    border-bottom: 3px solid #3D1365;
+    outline:none;
+}
+#card{
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.card{
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+.card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background:#E6E1EF;
+    border-bottom: 2px solid #3D1365;
+    font-size: 18px;
+    color:#00004F;
+}
+.card-body{
+    padding:16px 0px 16px 32px;
+    background:linear-gradient(to top, #000,20%, #74258D);
+}
+.body-title{
+    width: max-content;
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    color:#fff;
+    position: relative;
+}
+.body-title::after{
+    content: "";
+    display: block;
+    height: 10px;
+    width: 75px;
+    background-color: #D9DC3B;
+    position: absolute;
+    right: 0;
+}
+.body-content{
+    margin-top:20px;
+    color:#fff;
+    font-size: 16px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.body-text{
+    padding:4px;
+    position: relative;
+}
+.body-text::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    background-color: #D9DC3B;
+    left: -20px;
+    top:20px;
+}
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background:#E6E1EF;
+    border-top: 2px solid #3D1365;
+    font-size: 18px;
+    color:#00004F;
+}
+
+#checkboxes{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+}
+.checkoxes-container{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.checkoxes-container input{
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+.checkoxes-container label{
+    padding-left: 10px;
+}
+.container-button{    
+    display: block;
+    width: 100%;
+}
+.btn{
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #481658;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: #5b266c;
+}
