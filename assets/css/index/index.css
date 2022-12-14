@@ -1,6 +1,21 @@
 .an-title{
     font-size: 4rem;
     color: #00004F;
+    position: relative;
+    width: max-content;
+}
+h1.an-title::after{
+    content: "";
+    display: block;
+    width: 75px;
+    height: 10px;
+    background-color: #D9DC3B;
+    position: absolute;
+    left: 0;
+}
+#main-index .principal{
+    display: grid;
+    grid-template-columns: 1fr 300px;
 }
 
 .an-input{
@@ -23,6 +38,7 @@
 #instrucoes h2{
     width: max-content;
     position: relative;
+    font-size: 2rem;
 }
 #instrucoes h2::after{
     content: "";
@@ -53,11 +69,29 @@
     background: linear-gradient(to top, #232323, #321365);
 }
 
-@media (max-width:990px){
-    .an-title{
-        font-size: 3rem;
+@media (max-width:1200px){
+    #main-index .principal{
+        grid-template-columns: 1fr;
     }
     .an-detalhe{
         display: none;
+    }
+}
+
+@media (max-width:1024px){
+    #instrucoes h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:990px){
+    #checboxes label{
+        font-size: 14px;
+    }
+    .an-title{
+        font-size: 2rem;
+    }
+    #main-index .principal{
+        grid-template-columns: 1fr;
     }
 }
