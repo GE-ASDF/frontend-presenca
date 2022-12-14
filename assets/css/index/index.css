@@ -73,6 +73,18 @@ h1.an-title::after{
     #main-index .principal{
         grid-template-columns: 1fr;
     }
+   .an-title{
+        font-size: 2rem;
+    }
+    label.an-title{
+        font-size: 1rem !important;
+    }
+    #instrucoes h2{
+        font-size: 1rem;
+    }
+    [name="CodigoContrato"]{
+        font-size: 14px;
+    }
     .an-detalhe{
         display: none;
     }
@@ -88,9 +100,7 @@ h1.an-title::after{
     #checboxes label{
         font-size: 14px;
     }
-    .an-title{
-        font-size: 2rem;
-    }
+
     #main-index .principal{
         grid-template-columns: 1fr;
     }
